@@ -1,0 +1,59 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.menu {
+	background-color: #fce9ce;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin: 50px 600px;
+	padding-left: 8px;
+	transition-duration: 0.6s;
+	overflow: hidden;
+}
+.menu span {
+	background-color: #e68a00;
+	position: relative;
+	display: block;
+	height: 2px;
+}
+.menu span:nth-child(1) {
+	position: relative;
+	width: 25px;
+	top: 12px;
+	transition-duration: 0.6s;
+//	transition-delay: 0.25s;
+}
+.menu span:nth-child(2) {
+	position: relative;
+	width: 30px;
+	top: 22px;
+	left: 0;
+	transition-duration: 0.45s;
+}
+.menu span:nth-child(3) {
+	position: relative;
+	width: 15px;
+	top: 32px;
+	transition-duration: 0.6s;
+//	transition-delay: 0.25s;
+}
+.menu.active {
+	background-color: #d8e5fa;
+}
+.menu.active span {
+	background-color: #005ce6;
+}
+.menu.active span:nth-child(1) {
+	width: 35px;
+	transform: translateY(12px) rotate(45deg);
+}
+.menu.active span:nth-child(2) {
+	left: 45px;
+}
+.menu.active span:nth-child(3) {
+	width: 35px;
+	transform: translateY(-12px) rotate(-45deg);
+}
